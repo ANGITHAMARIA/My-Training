@@ -19,7 +19,8 @@ public static void main(String args[])
 List<Double> list =new ArrayList<Double>();
 File file=new File("C:\\Users\\angit\\OneDrive\\Desktop\\Obsqura Training\\Assignment and Notes\\Test Excel.xlsx");
 FileInputStream fis = null;
-try {
+try 
+{
 	fis = new FileInputStream(file);
 } 
 catch (FileNotFoundException e) 
@@ -31,7 +32,8 @@ XSSFWorkbook wb = null;
 try 
 {
 	wb = new XSSFWorkbook(fis);
-} catch (IOException e) 
+}
+catch (IOException e) 
 {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
