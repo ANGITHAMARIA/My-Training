@@ -21,13 +21,15 @@ File file=new File("C:\\Users\\angit\\OneDrive\\Desktop\\Obsqura Training\\Assig
 FileInputStream fis = null;
 try {
 	fis = new FileInputStream(file);
-} catch (FileNotFoundException e) 
+} 
+catch (FileNotFoundException e) 
 {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
 }
 XSSFWorkbook wb = null;
-try {
+try 
+{
 	wb = new XSSFWorkbook(fis);
 } catch (IOException e) 
 {
